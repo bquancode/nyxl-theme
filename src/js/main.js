@@ -8,3 +8,5 @@ AUI().ready(
 		}
 	}
 );
+
+console.log("Hello! Welcome to NYXL's home page");
