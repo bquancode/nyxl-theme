@@ -5,6 +5,10 @@
 	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype")
 }
 @font-face {
+	font-family:"Helvetica Bold";
+	src: url("../fonts/Helvetica/HelveticaLTStd-Comp.otf") format("opentype")
+}
+@font-face {
 	font-family:"Open Sans";
 	src: url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype")
 }
@@ -13,6 +17,23 @@
 	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype")
 }
 
+$bg-color: white;
+$bright-color: rgba(252,28,38,1);
+$complementary-color: rgba(15, 87, 234, .9);
+$solid-color: rgba(23, 28, 56, .9);
+
+$midnightblue-color: rgba(23, 28, 56, 1);
+$nyred-color: rgba(252, 28,38, 1);
+$brightblue-color: rgba(15 ,87 ,234, 1);
+
+$lightgray-color: #E3E6E8;
+$lightred-color: rgb(237,94,104);
+$lightmidnight-color: rgb(54,59,89);
+$lightblue-color: rgb(73,149,209);
+
+$lightgray-border: 1px solid #E3E6E8;
+
+$soft-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
 
 body {
 	background-color: $bg-color;
@@ -25,48 +46,53 @@ h1 , .portlet-title-text {
 	color: $midnightblue-color;
 }
 
-a {
-	font-family: "Open Sans";
-	color: $nyred-color;	
-}
-
 .container-fluid-1280 .row {
 	margin-left: 15px;
 	margin-right: 15px;
 }
 
-// #footer {
+.btn, .btn-default {
+	font-size: 12px;
+	border-color: $lightblue-color;
+	background: $lightblue-color;
+	color: white;
 
-// 	max-width: none;
-// 	width: 100vw;
-// 	position: relative;
-// 	left: 50%;
-// 	right: 50%;
-// 	margin-left: -50vw;
-// 	margin-right: -50vw;
-
-// 	div.row {
-// 		font-family: "Open Sans";
-// 		letter-spacing: 1.5px;
-// 		text-transform: lowercase;
-// 		color: beige;
-// 		text-align: center;
-// 		width: 100%;
-// 	}
+	:hover {
+		background:$lightblue-color;
+	}
+}
 
 
-	
-// }
 
-// .full-width {
-// 	max-width: none;
-//     width: 100vw;
-//     position: relative;
-//     left: 50%;
-//     right: 50%;
-//     margin-left: -50vw;
-//     margin-right: -50vw;
-// }
+#footer {
+
+	max-width: none;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+
+	div.row {
+		font-family: "Open Sans";
+		letter-spacing: 1.5px;
+		text-transform: lowercase;
+		color: beige;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.full-width {
+	max-width: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
 
 #wrapper {
 	padding: 0;

@@ -12,4 +12,22 @@
 .portlet-content {
 	box-shadow: $soft-shadow;
 	border: $lightgray-border;
+
+	a {
+		font-family: "Open Sans";
+		color: $lightred-color;	
+	
+		:hover, :focus {
+			color: $nyred-color;
+		}
+
+		.btn, 
+		.btn-default, 
+		.btn:hover,
+		.btn:focus, {
+			color: white;
+		}
+	}
+
 }
+

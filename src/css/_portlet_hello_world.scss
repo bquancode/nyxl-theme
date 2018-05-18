@@ -13,15 +13,17 @@
 
 	.portlet-title-text {
 		color: $nyred-color;
-		font-size: 300%;
+		font-size: 48px;
 		text-transform: uppercase;
-		letter-spacing: 3px;
+		letter-spacing: 8px;
+		word-spacing: 10px;
+		font-family: "Helvetica Bold"
 	}
 
 	.portlet-body {
 		padding: 0 20%;
 		color: #EEE;
 		letter-spacing: 3px;
-		font-family: "Helvetica Lt";
+		font-family: "Open Sans";
 	}
 }
