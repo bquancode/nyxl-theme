@@ -6,7 +6,7 @@
 }
 @font-face {
 	font-family:"Open Sans";
-	src: url("../fonts/Open_sans/OpenSans-Regular.ttf") format("truetype")
+	src: url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype")
 }
 @font-face {
 	font-family:"Roboto";
@@ -17,8 +17,6 @@
 body {
 	background-color: $bg-color;
 }
-
-
 
 h1 , .portlet-title-text {
 	font-family: "Roboto";
@@ -36,6 +34,39 @@ a {
 	margin-left: 15px;
 	margin-right: 15px;
 }
+
+// #footer {
+
+// 	max-width: none;
+// 	width: 100vw;
+// 	position: relative;
+// 	left: 50%;
+// 	right: 50%;
+// 	margin-left: -50vw;
+// 	margin-right: -50vw;
+
+// 	div.row {
+// 		font-family: "Open Sans";
+// 		letter-spacing: 1.5px;
+// 		text-transform: lowercase;
+// 		color: beige;
+// 		text-align: center;
+// 		width: 100%;
+// 	}
+
+
+	
+// }
+
+// .full-width {
+// 	max-width: none;
+//     width: 100vw;
+//     position: relative;
+//     left: 50%;
+//     right: 50%;
+//     margin-left: -50vw;
+//     margin-right: -50vw;
+// }
 
 #wrapper {
 	padding: 0;

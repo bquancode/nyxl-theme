@@ -1,6 +1,6 @@
 {
 	"name": "nyxl-theme",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "package.json",
 	"keywords": [
 		"liferay-theme"
@@ -19,6 +19,7 @@
 	},
 	"dependencies": {
 		"gulp-ruby-sass": "^3.0.0",
-		"liferay-theme-finder": "^7.0.0"
+		"liferay-theme-finder": "^7.0.0",
+		"npm": "^6.0.1"
 	}
 }

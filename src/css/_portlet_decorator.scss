@@ -1,8 +1,15 @@
 .portlet-decorate .portlet-content {
 	background: #FFF;
-	border: 1px solid #DEEEEE;
+	border:$lightgray-border;
+	box-shadow: $soft-shadow;
+	border-radius: 3px;
 }
 
 .portlet-barebone .portlet-content {
 	padding: 0;
+}
+
+.portlet-content {
+	box-shadow: $soft-shadow;
+	border: $lightgray-border;
 }
