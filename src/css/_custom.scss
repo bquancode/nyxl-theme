@@ -18,6 +18,20 @@ body {
 	background-color: $bg-color;
 }
 
+
+
+h1 , .portlet-title-text {
+	font-family: "Roboto";
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: $midnightblue-color;
+}
+
+a {
+	font-family: "Open Sans";
+	color: $nyred-color;	
+}
+
 .container-fluid-1280 .row {
 	margin-left: 15px;
 	margin-right: 15px;

@@ -1,16 +1,21 @@
 .portlet-hello-world .portlet-content {
 	background: url(../images/nyxl_banner.png) top;
-	background-size: cover;
+	background-size: inherit;
 	background-position: center;
 	min-height: 390px;
-	padding-top: 40px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: $soft-shadow;
+	border-radius: 3px;
 
 	.portlet-title-text {
 		color: $nyred-color;
 		font-size: 300%;
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 3px;
 	}
 
 	.portlet-body {
