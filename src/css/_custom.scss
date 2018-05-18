@@ -1,5 +1,9 @@
 @import "portlet_decorator";
 @import "portlet_hello_world";
+@font-face {
+	font-family:"Helvetica Lt";
+	src: url("../fonts/helvetica/HelveticaLTStd-Light.otf") format("opentype")
+}
 
 body {
 	background-color: $bg-color;
