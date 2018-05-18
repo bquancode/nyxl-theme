@@ -9,4 +9,12 @@ AUI().ready(
 	}
 );
 
-console.log("Hello! Welcome to NYXL's home page");
+console.log("Hello! Welcome to NYXL's development home page");
+
+let addFullWidth = () => {
+	let helloWorldPortlet = document.querySelector("#portlet_com_liferay_hello_world_web_portlet_HelloWorldPortlet");
+	helloWorldPortlet = helloWorldPortlet.firstElementChild
+	helloWorldPortlet.classList.add("full-width");
+}
+
+addFullWidth();

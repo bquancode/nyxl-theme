@@ -17,33 +17,16 @@
 	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype")
 }
 
-$bg-color: white;
-$bright-color: rgba(252,28,38,1);
-$complementary-color: rgba(15, 87, 234, .9);
-$solid-color: rgba(23, 28, 56, .9);
-
-$midnightblue-color: rgba(23, 28, 56, 1);
-$nyred-color: rgba(252, 28,38, 1);
-$brightblue-color: rgba(15 ,87 ,234, 1);
-
-$lightgray-color: #E3E6E8;
-$lightred-color: rgb(237,94,104);
-$lightmidnight-color: rgb(54,59,89);
-$lightblue-color: rgb(73,149,209);
-
-$lightgray-border: 1px solid #E3E6E8;
-
-$soft-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
-
 body {
 	background-color: $bg-color;
 }
 
 h1 , .portlet-title-text {
-	font-family: "Roboto";
 	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: $midnightblue-color;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: $lightmidnight-color;
+    font-family: "Helvetica Bold";
 }
 
 .container-fluid-1280 .row {
@@ -73,6 +56,7 @@ h1 , .portlet-title-text {
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
+	margin-top: 5%;
 
 	div.row {
 		font-family: "Open Sans";
@@ -100,14 +84,38 @@ h1 , .portlet-title-text {
 
 #banner {
 	padding: 20px 0;
-	position: relative;
+	margin-bottom: 5%;
+
+	background: $midnightblue-color;
+
+
+	// escapse container for full width nav
+	max-width: none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 
 	a:active, a:hover, a:focus {
 		text-decoration: none;
+		text-shadow: $hard-shadow
 	}
 
 	.portlet-topper {
 		z-index: 1;
+	}
+
+	// Linked Navbar styling
+	.navbar {
+		background: $nyred-color;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+	}
+
+	.portlet-content a:hover {
+		text-shadow: $hard-shadow;
 	}
 
 	.navbar-collapse {
@@ -120,11 +128,14 @@ h1 , .portlet-title-text {
 		margin: 12px 0 12px 6px;
 	}
 
+	// NYXL in header
 	#heading .site-name {
-		color: $solid-color;
 		font-size: 150%;
 		margin-left: 8px;
 		vertical-align: middle;
+		background: $nyred-color;
+		color: white;
+		padding: 10px 50px;
 
 		@include sm {
 			letter-spacing: 2px;
@@ -155,16 +166,22 @@ h1 , .portlet-title-text {
 			}
 		}
 
+		// Navbar link items
 		.navbar-blank > li {
 			& > a {
-				color: $solid-color;
+				color: white;
 			}
 
 			&:hover, &.hover, &.active, .dropdown-menu .active {
 				& > a {
-					color: #000;
+					color: lightsteelblue;
 				}
 			}
+		}
+
+		.portlet-content {
+			border: none;
+			box-shadow: none;
 		}
 
 		@include media-query(null, $screen-xs-max) {
