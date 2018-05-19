@@ -71,7 +71,7 @@
 
 	<footer class="container-fluid-1280" id="footer" role="contentinfo">
 		<div class="row">
-			<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
+			Built by <a href="http://barrettquan.com" rel="external">Barrett Quan</a>
 		</div>
 	</footer>
 </div>

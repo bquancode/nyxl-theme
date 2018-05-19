@@ -57,6 +57,7 @@ h1 , .portlet-title-text {
 	margin-left: -50vw;
 	margin-right: -50vw;
 	margin-top: 5%;
+	margin-bottom: 0;
 
 	div.row {
 		font-family: "Open Sans";
@@ -85,7 +86,6 @@ h1 , .portlet-title-text {
 #banner {
 	padding: 20px 0;
 	margin-bottom: 5%;
-
 	background: $midnightblue-color;
 
 
@@ -208,15 +208,28 @@ h1 , .portlet-title-text {
 			}
 		}
 
+		// Search bar styling
 		.form-control {
 			background-color: transparent;
 			border-bottom-width: 1px;
-			border-color: #D6DCE2;
 			margin-top: 2px;
+
+			:focus {
+				color: $nyred-color;
+			}
 
 			@include media-query(null, $screen-xs-max) {
 				border-width: 0;
 			}
+		}
+
+		.form-control:focus {
+			color: lightcoral;
+			border-color: goldenrod;
+		}
+
+		.form-control::placeholder {
+			text-transform: uppercase;
 		}
 
 		.search-select {
@@ -334,10 +347,11 @@ h1 , .portlet-title-text {
 	margin-right: -15px;
 }
 
+
+// default footer styles
 #footer {
 	background-color: $solid-color;
 	color: #FFF;
-	margin-bottom: 60px;
 	padding: 40px 20px;
 
 	a {
