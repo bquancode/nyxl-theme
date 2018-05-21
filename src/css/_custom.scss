@@ -108,14 +108,24 @@ h1 , .portlet-title-text {
 	}
 
 	// Linked Navbar styling
+
+	 #navigationCollapse .navbar-blank > li.hover > a, 
+	 #navigationCollapse .navbar-blank > li.active > a, 
+	 #navigationCollapse .navbar-blank > li .dropdown-menu .active > a {
+		color: white;
+		text-shadow: $hard-shadow;
+	}
 	.navbar {
 		background: $nyred-color;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: sans-serif;
 		text-transform: uppercase;
+		font-size: larger;
+		letter-spacing: 2px;
 	}
 
-	.portlet-content a:hover {
+	.portlet-content a:hover , .portlet-content a:focus {
 		text-shadow: $hard-shadow;
+		color:white;
 	}
 
 	.navbar-collapse {
@@ -128,7 +138,7 @@ h1 , .portlet-title-text {
 		margin: 12px 0 12px 6px;
 	}
 
-	// NYXL in header
+	// NYXL in header (font-family: "sans-serif")
 	#heading .site-name {
 		font-size: 150%;
 		margin-left: 8px;
@@ -174,7 +184,7 @@ h1 , .portlet-title-text {
 
 			&:hover, &.hover, &.active, .dropdown-menu .active {
 				& > a {
-					color: lightsteelblue;
+					color: $midnightblue-color;
 				}
 			}
 		}

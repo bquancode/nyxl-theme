@@ -13,8 +13,15 @@ console.log("Hello! Welcome to NYXL's development home page");
 
 var addFullWidth = () => {
 	let helloWorldPortlet = document.querySelector("#portlet_com_liferay_hello_world_web_portlet_HelloWorldPortlet");
-	helloWorldPortlet = helloWorldPortlet.firstElementChild
-	helloWorldPortlet.classList.add("full-width");
+
+	
+	if (helloWorldPortlet.firstElementChild !== null) {
+		helloWorldPortlet = helloWorldPortlet.firstElementChild
+		helloWorldPortlet.classList.add("full-width");
+		return console.log("made full width", helloWorldPortlet);
+	} else {
+		return console.log("did not add full width, check class names")
+	}
 }
 
 // var makeExcelsior = () => {

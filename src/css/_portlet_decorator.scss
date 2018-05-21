@@ -14,11 +14,11 @@
 	border: $lightgray-border;
 
 	a {
-		font-family: "Open Sans";
-		color: $lightred-color;	
+		font-family: sans-serif;
+		// color: $lightred-color;	
 	
 		:hover, :focus {
-			color: $nyred-color;
+			// color: $nyred-color;
 		}
 
 		.btn, 
