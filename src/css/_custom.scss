@@ -37,10 +37,12 @@ body {
 	border-color: $lightblue-color;
 	background: $lightblue-color;
 	color: white;
+}
 
-	:hover {
-		background:$lightblue-color;
-	}
+.btn:hover, .btn:focus {
+	background:$brightblue-color;
+	border: 2px solid $brightblue-color;
+	color: white;
 }
 
 .text-default {
@@ -93,7 +95,6 @@ p {
 }
 
 //panel styles 
-
 .panel {
 
 	border-radius:8px;
@@ -113,6 +114,18 @@ p {
 		border-color: none;
 	}
 
+	.text-primary {
+		color: $lightblue-color;
+	}
+
+}
+
+//form styles
+.form-control {
+	:focus {
+		color: $lightblue-color;
+		border-color: $lightblue-color;
+	}
 }
 
 // default footer styles

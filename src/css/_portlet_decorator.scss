@@ -39,9 +39,19 @@
 	.entry-info, .hide-accessible {
 		font-family: "Open Sans";
 	}
-	
+
 	.entry-title {
 		text-transform: uppercase;
 		letter-spacing: 2px;
+	}
+
+	.entry-social {
+		a {
+			color: $lightblue-color;
+			:focus, :hover, :active, :visited {
+				color: $brightblue-color;
+			}
+		}
+
 	}
 }
