@@ -1,5 +1,6 @@
 @import "portlet_decorator";
 @import "portlet_hello_world";
+@import "header";
 @font-face {
 	font-family:"Helvetica Lt";
 	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype")
@@ -10,24 +11,21 @@
 }
 @font-face {
 	font-family:"Open Sans";
-	src: url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype")
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype")
 }
 @font-face {
 	font-family:"Roboto";
 	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype")
 }
+@font-face {
+	font-family:"Titillium Web";
+	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype")
+}
+
 
 body {
 	background-color: $bg-color;
 }
-
-// h1 , .portlet-title-text {
-// 	text-transform: uppercase;
-//     word-spacing: 10px;
-//     letter-spacing: 5px;
-//     color: $lightmidnight-color;
-//     font-family: "Helvetica Bold";
-// }
 
 .container-fluid-1280 .row {
 	margin-left: 15px;
@@ -49,7 +47,9 @@ body {
 	color: owgray-color;
 }
 
-
+p {
+	font-family: "Titillium Web";
+}
 
 #footer {
 
@@ -87,277 +87,6 @@ body {
 	padding: 0;
 }
 
-#banner {
-	padding: 20px 0;
-	margin-bottom: 5%;
-	background: $midnightblue-color;
-
-
-	// escapse container for full width nav
-	max-width: none;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-
-	a:active, a:hover, a:focus {
-		text-decoration: none;
-		text-shadow: $hard-shadow
-	}
-
-	.portlet-topper {
-		z-index: 1;
-	}
-
-	// Linked Navbar styling
-
-	 #navigationCollapse .navbar-blank > li.hover > a, 
-	 #navigationCollapse .navbar-blank > li.active > a, 
-	 #navigationCollapse .navbar-blank > li .dropdown-menu .active > a {
-		color: white;
-		text-shadow: $hard-shadow;
-		border-bottom: 2px solid white;
-	}
-	
-	.navbar {
-		background: $nyred-color;
-		font-family: sans-serif;
-		text-transform: uppercase;
-		font-size: larger;
-		letter-spacing: 2px;
-	}
-
-	.portlet-content a:hover , .portlet-content a:focus {
-		text-shadow: $hard-shadow;
-		color:white;
-	}
-
-	.navbar-collapse {
-		@include sm {
-			padding-right: 4px;
-		}
-	}
-
-	.navbar-toggle {
-		margin: 12px 0 12px 6px;
-	}
-
-	// NYXL in header (font-family: "sans-serif")
-	#heading .site-name {
-		font-size: 150%;
-		margin-left: 8px;
-		vertical-align: middle;
-		background: $nyred-color;
-		color: white;
-		padding: 10px 50px;
-
-		@include sm {
-			letter-spacing: 2px;
-			margin-left: 20px;
-		}
-	}
-
-	#navigationCollapse {
-		@include media-query(null, $screen-xs-max) {
-			font-size: 125%;
-			margin-left: -15px;
-			margin-right: -15px;
-		}
-
-		#navigation {
-			.input-container {
-				position: relative;
-			}
-
-			.portlet {
-				&, .portlet-body > .navbar {
-					margin-bottom: 0;
-				}
-			}
-
-			li.open > a:focus {
-				@include tab-focus;
-			}
-		}
-
-		// Navbar link items
-		.navbar-blank > li {
-			& > a {
-				color: white;
-			}
-
-			&:hover, &.hover, &.active, .dropdown-menu .active {
-				& > a {
-					// color: $midnightblue-color;
-				}
-			}
-		}
-
-		.portlet-content {
-			border: none;
-			box-shadow: none;
-		}
-
-		@include media-query(null, $screen-xs-max) {
-			.nav > li {
-				> a {
-					border-bottom: 1px solid #E1E1E1;
-				}
-
-				&:last-child > a {
-					border-bottom-width: 0;
-				}
-			}
-		}
-	}
-
-	.navbar-form {
-		@include sm {
-			margin-left: 30px;
-		}
-
-		.input-text-wrapper {
-			@include media-query(null, $screen-xs-max) {
-				display: block;
-			}
-		}
-
-		// Search bar styling
-		.form-control {
-			background-color: transparent;
-			border-bottom-width: 1px;
-			margin-top: 2px;
-
-			:focus {
-				color: $nyred-color;
-			}
-
-			@include media-query(null, $screen-xs-max) {
-				border-width: 0;
-			}
-		}
-
-		.form-control:focus {
-			color: lightcoral;
-			border-color: goldenrod;
-		}
-
-		.form-control::placeholder {
-			text-transform: uppercase;
-		}
-
-		.search-select {
-			margin-right: 40px;
-			padding-right: 20px;
-		}
-
-		.search-input {
-			font-size: 16px;
-			padding-right: 32px;
-
-			@include sm {
-				height: auto;
-				max-width: 200px;
-			}
-		}
-
-		.field-wrapper {
-			position: absolute;
-			right: 0;
-			top: 0;
-
-			a {
-				color: $complementary-color;
-			}
-		}
-	}
-
-	.user-personal-bar {
-		@include sm {
-			position: absolute;
-			right: 20px;
-			top: 0;
-		}
-
-		.panel-notifications-count {
-			top: 50%;
-
-			@include transform(translateY(-50%));
-
-			@include sm {
-				right: -15px;
-			}
-		}
-
-		.sign-in > a, .user-avatar-link {
-			display: block;
-		}
-
-		.sign-in > a {
-			line-height: 28px;
-			padding: 15px 4px;
-		}
-
-		.user-avatar-image {
-			display: inline-block;
-			vertical-align: text-bottom;
-			width: 32px;
-		}
-
-		.user-avatar-link {
-			line-height: 0;
-			padding: 18px 4px;
-
-			@include sm {
-				padding: 8px 0 8px 14px;
-			}
-		}
-
-		.panel-notifications-count {
-			@include media-query(null, $breakpoint_tablet - 1) {
-				left: 2px;
-				position: relative;
-				top: 6px;
-			}
-		}
-
-		.icon-user, .user-full-name {
-			display: none;
-		}
-	}
-
-	.navbar-nav {
-		@include media-query(null, $screen-xs-max) {
-			margin: 0 0;
-		}
-	}
-
-	.lfr-nav-item .lfr-nav-child-toggle {
-		line-height: 28px;
-		margin-top: -14px;
-		padding-left: 15px;
-		padding-right: 15px;
-		position: absolute;
-		right: 4px;
-		top: 50%;
-
-		@include sm {
-			padding: 0 0 0 8px;
-			position: relative;
-
-			.lexicon-icon {
-				width: 8px;
-			}
-		}
-	}
-
-	@include sm {
-		padding: 40px 0 30px;
-	}
-}
-
 #content .row {
 	margin-left: -15px;
 	margin-right: -15px;
@@ -385,7 +114,6 @@ body {
 	}
 
 }
-
 
 // default footer styles
 #footer {
