@@ -11,16 +11,16 @@ AUI().ready(
 
 console.log("Hello! Welcome to NYXL's development home page");
 
-var addFullWidth = () => {
-	let helloWorldPortlet = document.querySelector("#portlet_com_liferay_hello_world_web_portlet_HelloWorldPortlet");
-
+var addFullWidth = (elem) => {
 	
-	if (helloWorldPortlet.firstElementChild !== null) {
+	let helloWorldPortlet = document.querySelector(elem);
+	
+	if (helloWorldPortlet.firstElementChild === null) {
+		return console.log("did not add full width, check html of", elm)
+	} else {
 		helloWorldPortlet = helloWorldPortlet.firstElementChild
 		helloWorldPortlet.classList.add("full-width");
 		return console.log("made full width", helloWorldPortlet);
-	} else {
-		return console.log("did not add full width, check class names")
 	}
 }
 
@@ -30,4 +30,4 @@ var addFullWidth = () => {
 // 	console.log('make xl', bodyText);
 // }	
 
-addFullWidth();
+addEventListener("load", addFullWidth("#portlet_com_liferay_hello_world_web_portlet_HelloWorldPortlet"));

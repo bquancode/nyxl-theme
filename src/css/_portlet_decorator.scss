@@ -9,18 +9,21 @@
 	padding: 0;
 }
 
+.portlet-title-text {
+	background: $nyred-color; 
+	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	padding: 10px 50px;
+}
+
 .portlet-content {
 	box-shadow: $soft-shadow;
 	border: $lightgray-border;
 
 	a {
 		font-family: sans-serif;
-		// color: $lightred-color;	
-	
-		:hover, :focus {
-			// color: $nyred-color;
-		}
-
+		
 		.btn, 
 		.btn-default, 
 		.btn:hover,

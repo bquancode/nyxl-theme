@@ -21,13 +21,13 @@ body {
 	background-color: $bg-color;
 }
 
-h1 , .portlet-title-text {
-	text-transform: uppercase;
-    word-spacing: 10px;
-    letter-spacing: 5px;
-    color: $lightmidnight-color;
-    font-family: "Helvetica Bold";
-}
+// h1 , .portlet-title-text {
+// 	text-transform: uppercase;
+//     word-spacing: 10px;
+//     letter-spacing: 5px;
+//     color: $lightmidnight-color;
+//     font-family: "Helvetica Bold";
+// }
 
 .container-fluid-1280 .row {
 	margin-left: 15px;
@@ -43,6 +43,10 @@ h1 , .portlet-title-text {
 	:hover {
 		background:$lightblue-color;
 	}
+}
+
+.text-default {
+	color: owgray-color;
 }
 
 
@@ -114,7 +118,9 @@ h1 , .portlet-title-text {
 	 #navigationCollapse .navbar-blank > li .dropdown-menu .active > a {
 		color: white;
 		text-shadow: $hard-shadow;
+		border-bottom: 2px solid white;
 	}
+	
 	.navbar {
 		background: $nyred-color;
 		font-family: sans-serif;
@@ -184,7 +190,7 @@ h1 , .portlet-title-text {
 
 			&:hover, &.hover, &.active, .dropdown-menu .active {
 				& > a {
-					color: $midnightblue-color;
+					// color: $midnightblue-color;
 				}
 			}
 		}
@@ -355,6 +361,29 @@ h1 , .portlet-title-text {
 #content .row {
 	margin-left: -15px;
 	margin-right: -15px;
+}
+
+//panel styles 
+
+.panel {
+
+	border-radius:8px;
+	color: $owgray-color;
+
+	.panel-heading{
+		background: $nyred-color;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		letter-spacing: 2px;
+		color: white;
+		border-radius: 8px 8px 0 0;
+		border: none;
+	}
+
+	.panel-default {
+		border-color: none;
+	}
+
 }
 
 
