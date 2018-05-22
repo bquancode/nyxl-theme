@@ -20,7 +20,34 @@
 
 	.portlet-topper {
 		z-index: 1;
-	}
+    }
+    
+    .sign-in {
+        a {
+            color: white;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+
+            .text-default:hover {
+                color: $nyred-color;
+            }
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
 	// Linked Navbar styling
 	 #navigationCollapse .navbar-blank > li.hover > a, 
@@ -137,25 +164,20 @@
 		// Search bar styling
 		.form-control {
 			background-color: transparent;
-			border-bottom-width: 1px;
-			margin-top: 2px;
-
-			:focus {
-				color: $nyred-color;
-			}
+            border-bottom-width: 1px;
+            margin-top: 2px;
+            border-color: white;
+            color: white;
 
 			@include media-query(null, $screen-xs-max) {
 				border-width: 0;
 			}
 		}
 
-		.form-control:focus {
-			color: lightcoral;
-			border-color: goldenrod;
-		}
-
 		.form-control::placeholder {
-			text-transform: uppercase;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 2px;
 		}
 
 		.search-select {
