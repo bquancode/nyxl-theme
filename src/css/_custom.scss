@@ -37,12 +37,16 @@ body {
 	border-color: $lightblue-color;
 	background: $lightblue-color;
 	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .btn:hover, .btn:focus {
 	background:$brightblue-color;
 	border: 2px solid $brightblue-color;
 	color: white;
+	text-shadow: $hard-shadow;
 }
 
 .text-default {

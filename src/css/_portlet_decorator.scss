@@ -35,6 +35,7 @@
 
 }
 
+//BLOG styles
 .portlet-blogs {
 	.entry-info, .hide-accessible {
 		font-family: "Open Sans";
@@ -53,5 +54,37 @@
 			}
 		}
 
+	}
+}
+
+//FORM styles
+.portlet-forms {
+
+	h1 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-family: sans-serif
+	}
+
+	h2 {
+		letter-spacing: 2px;
+		font-family: "Roboto";
+		text-transform: uppercase;
+	}
+
+	.control-label {
+		font-family: "Titillium Web";
+		letter-spacing: 2px;
+	}
+
+	// .form-control {
+	// 	:hover, :active, :visited {
+	// 		color: $brightblue-color;
+	// 		border-color: $brightblue-color;
+	// 	}
+	// }
+
+	label {
+		font-family: "Open Sans";
 	}
 }
