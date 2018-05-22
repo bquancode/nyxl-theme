@@ -2,8 +2,10 @@
 	padding: 20px 0;
 	margin-bottom: 5%;
     background: $midnightblue-color;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 150px;
 
 	// Escape container for full width nav
 	max-width: none;
@@ -22,7 +24,16 @@
             text-shadow: $hard-shadow
         }
 
-    }
+	}
+	
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active, 
+	.form-control:focus {
+		box-shadow: 0 0 0 100px $midnightblue-color inset;
+		-webkit-text-fill-color: white;
+	}	
 
 	.portlet-topper {
 		z-index: 1;

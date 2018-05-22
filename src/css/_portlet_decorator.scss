@@ -1,37 +1,21 @@
 .portlet-decorate .portlet-content {
 	background: #FFF;
-	border: $lightgray-border;
-	box-shadow: $soft-shadow;
-	border-radius: 3px;
+	border: none;
 }
 
 .portlet-barebone .portlet-content {
 	padding: 0;
 }
 
-// .portlet-title-text {
-// 	background: $nyred-color; 
-// 	color: white;
-// 	font-family: sans-serif;
-// 	text-transform: uppercase;
-// 	padding: 10px 50px;
-// 	letter-spacing: 2px;
-// }
 .portlet-title-text {
 	color: $nyred-color;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	display:block;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-shadow: $text-shadow;
+	font-family: "Circular";
+	text-transform: capitalize;
+	letter-spacing: .5px;
+	font-size: x-large;
 }
 
 .portlet-content {
-	box-shadow: $soft-shadow;
-	border: $lightgray-border;
-
 	a {
 		font-family: sans-serif;
 		font-weight: bold;
@@ -52,19 +36,21 @@
 }
 
 .panel-default {
-	border-color: $brightblue-color; 
+	border-color: $brightblue-color;
+	border-radius: 8px 8px 0 0!important;
 }
-	.panel-default > .panel-heading {
-	border-color: $brightblue-color; 
 
-	}
-	.panel-default > .panel-heading + .panel-collapse > .panel-body {
-		border-top-color: $brightblue-color; 
-	}
+.panel-default > .panel-heading {
+border-color: $brightblue-color; 
+}
 
-	.panel-default > .panel-footer + .panel-collapse > .panel-body {
-		border-bottom-color: $brightblue-color;
-	}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border: none; 
+}
+
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+	border-bottom-color: $brightblue-color;
+}
 
 //BLOG styles
 .portlet-blogs {
@@ -73,8 +59,13 @@
 	}
 
 	.entry-title {
-		text-transform: uppercase;
-		letter-spacing: 2px;
+		text-transform: capitalize;
+		letter-spacing: .5px;
+		font-family: "Circular";
+
+		h2 > a {
+			font-family: "Circular";
+		}
 	}
 
 	.entry-social {
@@ -84,23 +75,14 @@
 				color: $brightblue-color;
 			}
 		}
-
 	}
 }
 
 //FORM styles
 .portlet-forms {
-
-	h1 {
+	h1, h2{
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-family: sans-serif
-	}
-
-	h2 {
-		letter-spacing: 2px;
-		font-family: "Roboto";
-		text-transform: uppercase;
 	}
 
 	.control-label {
@@ -108,13 +90,10 @@
 		letter-spacing: 2px;
 	}
 
-	label, select, input, table, .yui3-g [class *= "yui3-u"] {
+	label, select, input, table, {
 		font-family: "Open Sans";
 	}
 
-	.yui3-g [class *= "yui3-u"] {
-		color: $owgray-color;
-	}
 }
 
 .form-control:focus {

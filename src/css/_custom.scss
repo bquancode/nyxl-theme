@@ -21,7 +21,10 @@
 	font-family:"Titillium Web";
 	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype")
 }
-
+@font-face {
+	font-family:"Circular";
+	src: url("../fonts/Circular/Circular-Medium.ttf") format("truetype")
+}
 
 body {
 	background-color: $bg-color;
@@ -53,16 +56,16 @@ body {
 	color: owgray-color;
 }
 
-p {
-	font-family: "Titillium Web";
-}
-
 .rating a {
     font-family: "fontawesome-alloy";
 }
 
 .glyphicon {
 	font-family: 'Glyphicons Halflings'!important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Titillium Web";
 }
 
 //Sidebar nav Styles
