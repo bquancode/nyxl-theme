@@ -57,17 +57,6 @@ p {
 	font-family: "Titillium Web";
 }
 
-a {
-	font-family: sans-serif;
-	font-weight: bold;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-
-	:hover, :focus, :active, {
-		text-shadow: $hard-shadow;
-	}
-}
-
 .rating a {
     font-family: "fontawesome-alloy";
 }
@@ -76,10 +65,23 @@ a {
 	font-family: 'Glyphicons Halflings'!important;
 }
 
-//Sidenav Styles
-.product-menu .list-group-heading {
-    letter-spacing: 2px;
+//Sidebar nav Styles
+.sidebar-body {
+	a {
+		letter-spacing: .5px;
+		text-transform: capitalize;
+		font-weight: normal;
+		font-family: "Open Sans"
+	}
 }
+
+.product-menu .panel-heading .panel-title > .panel-toggler .category-name, 
+.product-menu .panel-heading .panel-title > .panel-toggler .user-name, 
+.product-menu .panel-heading .panel-title > .panel-toggler .site-name {
+    text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: 2px;
+    }
 
 //styles when panel is clicked open
 .product-menu .panel-heading .panel-title > .panel-toggler:not(.collapsed) {
