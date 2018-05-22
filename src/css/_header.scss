@@ -1,8 +1,9 @@
 #banner {
 	padding: 20px 0;
 	margin-bottom: 5%;
-	background: $midnightblue-color;
-
+    background: $midnightblue-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
 	// Escape container for full width nav
 	max-width: none;

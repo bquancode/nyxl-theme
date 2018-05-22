@@ -9,13 +9,23 @@
 	padding: 0;
 }
 
+// .portlet-title-text {
+// 	background: $nyred-color; 
+// 	color: white;
+// 	font-family: sans-serif;
+// 	text-transform: uppercase;
+// 	padding: 10px 50px;
+// 	letter-spacing: 2px;
+// }
 .portlet-title-text {
-	background: $nyred-color; 
-	color: white;
+	color: $nyred-color;
 	font-family: sans-serif;
 	text-transform: uppercase;
-	padding: 10px 50px;
+	text-align: center;
+	display:block;
 	letter-spacing: 2px;
+	font-weight: bold;
+	text-shadow: $text-shadow;
 }
 
 .portlet-content {
@@ -40,6 +50,21 @@
 		}
 	}
 }
+
+.panel-default {
+	border-color: $brightblue-color; 
+}
+	.panel-default > .panel-heading {
+	border-color: $brightblue-color; 
+
+	}
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		border-top-color: $brightblue-color; 
+	}
+
+	.panel-default > .panel-footer + .panel-collapse > .panel-body {
+		border-bottom-color: $brightblue-color;
+	}
 
 //BLOG styles
 .portlet-blogs {
@@ -83,15 +108,16 @@
 		letter-spacing: 2px;
 	}
 
-	.form-control {
-		:hover, :active, :visited, :focus {
-			color: $brightblue-color;
-			border-color: $brightblue-color;
-			background: pink;
-		}
-	}
-
-	label {
+	label, select, input, table, .yui3-g [class *= "yui3-u"] {
 		font-family: "Open Sans";
 	}
+
+	.yui3-g [class *= "yui3-u"] {
+		color: $owgray-color;
+	}
+}
+
+.form-control:focus {
+	color: $brightblue-color;
+	border-color: $brightblue-color;
 }
