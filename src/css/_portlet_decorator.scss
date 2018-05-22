@@ -32,7 +32,6 @@
 			color: white;
 		}
 	}
-
 }
 
 //BLOG styles
@@ -77,12 +76,13 @@
 		letter-spacing: 2px;
 	}
 
-	// .form-control {
-	// 	:hover, :active, :visited {
-	// 		color: $brightblue-color;
-	// 		border-color: $brightblue-color;
-	// 	}
-	// }
+	.form-control {
+		:hover, :active, :visited, :focus {
+			color: $brightblue-color;
+			border-color: $brightblue-color;
+			background: pink;
+		}
+	}
 
 	label {
 		font-family: "Open Sans";

@@ -4,7 +4,7 @@
 	background: $midnightblue-color;
 
 
-	// escapse container for full width nav
+	// Escape container for full width nav
 	max-width: none;
     width: 100vw;
     position: relative;
@@ -13,13 +13,23 @@
     margin-left: -50vw;
     margin-right: -50vw;
 
-	a:active, a:hover, a:focus {
-		text-decoration: none;
-		text-shadow: $hard-shadow
-	}
+    a {
+        font-weight: normal;
+
+        :active, :hover, :focus {
+            text-decoration: none;
+            text-shadow: $hard-shadow
+        }
+
+    }
 
 	.portlet-topper {
 		z-index: 1;
+    }
+
+    #heading > a.custom-logo > img {
+        height: auto;
+        width: 85px;
     }
     
     .sign-in {
@@ -121,11 +131,14 @@
 				color: white;
 			}
 
-			&:hover, &.hover, &.active, .dropdown-menu .active {
-				& > a {
-					// color: $midnightblue-color;
-				}
-			}
+            // &:hover, 
+            // &.hover, 
+            // &.active, 
+            // .dropdown-menu .active {
+			// 	& > a {
+			// 		color: $midnightblue-color;
+			// 	}
+			// }
 		}
 
 		.portlet-content {

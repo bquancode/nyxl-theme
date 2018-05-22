@@ -57,6 +57,36 @@ p {
 	font-family: "Titillium Web";
 }
 
+a {
+	font-family: sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	:hover, :focus, :active, {
+		text-shadow: $hard-shadow;
+	}
+}
+
+.rating a {
+    font-family: "fontawesome-alloy";
+}
+
+.glyphicon {
+	font-family: 'Glyphicons Halflings'!important;
+}
+
+//Sidenav Styles
+.product-menu .list-group-heading {
+    letter-spacing: 2px;
+}
+
+//styles when panel is clicked open
+.product-menu .panel-heading .panel-title > .panel-toggler:not(.collapsed) {
+	border-left: 4px solid $brightblue-color!important;
+	text-shadow: $hard-shadow;
+}
+
 #footer {
 
 	max-width: none;

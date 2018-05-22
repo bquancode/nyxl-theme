@@ -15,8 +15,8 @@ var addFullWidth = (elem) => {
 	
 	let helloWorldPortlet = document.querySelector(elem);
 	
-	if (helloWorldPortlet.firstElementChild === null) {
-		return console.log("did not add full width, check html of", elm)
+	if (helloWorldPortlet.firstElementChild == false) {
+		return console.log("did not add full width, check html of", elem)
 	} else {
 		helloWorldPortlet = helloWorldPortlet.firstElementChild
 		helloWorldPortlet.classList.add("full-width");
