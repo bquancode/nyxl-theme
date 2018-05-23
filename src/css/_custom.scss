@@ -1,29 +1,35 @@
 @import "portlet_decorator";
 @import "portlet_hello_world";
 @import "header";
+
 @font-face {
-	font-family:"Helvetica Lt";
-	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype")
+	font-family: "Helvetica Lt";
+	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype");
 }
+
 @font-face {
-	font-family:"Helvetica Bold";
-	src: url("../fonts/Helvetica/HelveticaLTStd-Comp.otf") format("opentype")
+	font-family: "Helvetica Bold";
+	src: url("../fonts/Helvetica/HelveticaLTStd-Comp.otf") format("opentype");
 }
+
 @font-face {
-	font-family:"Open Sans";
-	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype")
+	font-family: "Open Sans";
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
 }
+
 @font-face {
-	font-family:"Roboto";
-	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype")
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
+
 @font-face {
-	font-family:"Titillium Web";
-	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype")
+	font-family: "Titillium Web";
+	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype");
 }
+
 @font-face {
-	font-family:"Circular";
-	src: url("../fonts/Circular/Circular-Medium.ttf") format("truetype")
+	font-family: "Circular";
+	src: url("../fonts/Circular/Circular-Medium.ttf") format("truetype");
 }
 
 body {
@@ -36,20 +42,20 @@ body {
 }
 
 .btn, .btn-default {
+	background: $lightblue-color;
+	border-color: $lightblue-color;
+	color: #FFF !important;
+	font-family: sans-serif;
 	font-size: 12px;
 	font-weight: bold;
-	border-color: $lightblue-color;
-	background: $lightblue-color;
-	color: white!important;
-	font-family: sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 .btn:hover, .btn:focus {
-	background:$brightblue-color;
+	background: $brightblue-color;
 	border: 2px solid $brightblue-color;
-	color: white;
+	color: #FFF;
 	text-shadow: $hard-shadow;
 }
 
@@ -58,71 +64,69 @@ body {
 }
 
 .rating a {
-    font-family: "fontawesome-alloy";
+	font-family: "fontawesome-alloy";
 }
 
 .glyphicon {
-	font-family: 'Glyphicons Halflings'!important;
+	font-family: 'Glyphicons Halflings' !important;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Titillium Web";
+	font-family: "Titillium Web";
 }
 
 //Sidebar nav Styles
+
 .sidebar-body {
 	a {
-		letter-spacing: .5px;
-		text-transform: capitalize;
+		font-family: "Open Sans";
 		font-weight: normal;
-		font-family: "Open Sans"
+		letter-spacing: 0.5px;
+		text-transform: capitalize;
 	}
 }
 
-.product-menu .panel-heading .panel-title > .panel-toggler .category-name, 
-.product-menu .panel-heading .panel-title > .panel-toggler .user-name, 
+.product-menu .panel-heading .panel-title > .panel-toggler .category-name,
+.product-menu .panel-heading .panel-title > .panel-toggler .user-name,
 .product-menu .panel-heading .panel-title > .panel-toggler .site-name {
-    text-transform: uppercase;
 	font-family: sans-serif;
 	letter-spacing: 2px;
-    }
+	text-transform: uppercase;
+}
 
 //styles when panel is clicked open
+
 .product-menu .panel-heading .panel-title > .panel-toggler:not(.collapsed) {
-	border-left: 4px solid $brightblue-color!important;
+	border-left: 4px solid $brightblue-color !important;
 	text-shadow: $hard-shadow;
 }
 
 #footer {
-
-	max-width: none;
-	width: 100vw;
-	position: relative;
 	left: 50%;
+	margin: 5% -50vw 0 -50vw;
+	max-width: none;
+	position: relative;
 	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	margin-top: 5%;
-	margin-bottom: 0;
+	width: 100vw;
 
 	div.row {
+		color: #F5F5DC;
 		font-family: "Open Sans";
 		letter-spacing: 1.5px;
-		text-transform: lowercase;
-		color: beige;
 		text-align: center;
+		text-transform: lowercase;
 		width: 100%;
 	}
 }
 
 .full-width {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 	max-width: none;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
 }
 
 #wrapper {
@@ -134,20 +138,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-right: -15px;
 }
 
-//panel styles 
-.panel {
+//panel styles
 
-	border-radius:8px;
+.panel {
+	border-radius: 8px;
 	color: $owgray-color;
 
-	.panel-heading{
+	.panel-heading {
 		background: $nyred-color;
-		text-transform: uppercase;
+		border: none;
+		border-radius: 8px 8px 0 0;
+		color: #FFF;
 		font-family: sans-serif;
 		letter-spacing: 2px;
-		color: white;
-		border-radius: 8px 8px 0 0;
-		border: none;
+		text-transform: uppercase;
 	}
 
 	.panel-default {
@@ -157,18 +161,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.text-primary {
 		color: $lightblue-color;
 	}
-
 }
 
 //form styles
+
 .form-control {
 	:focus {
-		color: $lightblue-color;
 		border-color: $lightblue-color;
+		color: $lightblue-color;
 	}
 }
 
 // default footer styles
+
 #footer {
 	background-color: $solid-color;
 	color: #FFF;
