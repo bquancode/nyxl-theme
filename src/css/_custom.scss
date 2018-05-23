@@ -37,9 +37,10 @@ body {
 
 .btn, .btn-default {
 	font-size: 12px;
+	font-weight: bold;
 	border-color: $lightblue-color;
 	background: $lightblue-color;
-	color: white;
+	color: white!important;
 	font-family: sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;

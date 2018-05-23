@@ -30,10 +30,14 @@
 		.btn-default, 
 		.btn:hover,
 		.btn:focus, {
-			color: white;
+			color: white!important;
 		}
 	}
-}
+
+	.rating-label .rating a {
+		font-family: "fontawesome-alloy";
+	}
+	}
 
 .panel-default {
 	border-color: $brightblue-color;
@@ -99,4 +103,15 @@ border-color: $brightblue-color;
 .form-control:focus {
 	color: $brightblue-color;
 	border-color: $brightblue-color;
+}
+
+//Wiki card styles
+.panel-group .panel-title > a, 
+.panel-group .panel-title > span {
+	color: white;
+}
+
+//Changes color of links on wiki entry
+.card a, .card-horizontal a {
+	color: $lightblue-color;
 }
