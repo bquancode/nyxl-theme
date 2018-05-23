@@ -5,14 +5,11 @@
 	margin-left: -50vw;
 	margin-right: -50vw;
 	max-width: none;
-	overflow: hidden;
 	padding: 20px 0;
 	position: relative;
 	right: 50%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	width: 100vw;
-
+	
 	a {
 		font-weight: normal;
 
@@ -84,6 +81,18 @@
 	.navbar-collapse {
 		@include sm {
 			padding-right: 4px;
+		}
+	}
+
+	.navbar-right {
+		li {
+			max-width: 250px;
+			white-space: nowrap;
+		}
+
+		li a {
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 
