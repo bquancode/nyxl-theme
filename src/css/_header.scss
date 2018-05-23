@@ -87,12 +87,21 @@
 	.navbar-right {
 		li {
 			max-width: 250px;
+			margin: 0 5px;
 			white-space: nowrap;
 		}
 
 		li a {
 			overflow: hidden;
 			text-overflow: ellipsis;
+			color: #FFF;
+		}
+
+		//Child page nav hover styling
+		ul.child-menu,
+		ul.child-menu > li,
+		ul.child-menu > li a {
+			background: $brightblue-color;			
 		}
 	}
 
