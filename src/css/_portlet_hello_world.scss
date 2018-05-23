@@ -1,30 +1,30 @@
 .portlet-hello-world .portlet-content {
+	align-items: center;
 	background: url(../images/nyxl_banner.png) top;
-	background-size: inherit;
 	background-position: center;
 	background-repeat: repeat-x;
-	min-height: 390px;
-	text-align: center;
+	background-size: inherit;
+	border-radius: 3px;
+	box-shadow: $soft-shadow;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: space-around;
-	box-shadow: $soft-shadow;
-	border-radius: 3px;
+	min-height: 390px;
+	text-align: center;
 
 	.portlet-title-text {
-		color: $nyred-color;
 		background: none;
+		color: $nyred-color;
+		font-family: "Helvetica Bold";
 		font-size: 48px;
-		text-transform: uppercase;
 		letter-spacing: 8px;
+		text-transform: uppercase;
 		word-spacing: 10px;
-		font-family: "Helvetica Bold"
 	}
 
 	.portlet-body {
 		color: #EEE;
-		letter-spacing: 3px;
 		font-family: "Open Sans";
+		letter-spacing: 3px;
 	}
 }
