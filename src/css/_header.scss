@@ -1,92 +1,84 @@
 #banner {
-	padding: 20px 0;
+	background: $midnightblue-color;
+	left: 50%;
 	margin-bottom: 5%;
-    background: $midnightblue-color;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: none;
 	overflow: hidden;
+	padding: 20px 0;
+	position: relative;
+	right: 50%;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	max-width: 150px;
+	width: 100vw;
 
-	// Escape container for full width nav
-	max-width: none;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+	a {
+		font-weight: normal;
 
-    a {
-        font-weight: normal;
-
-        :active, :hover, :focus {
-            text-decoration: none;
-            text-shadow: $hard-shadow
-        }
-
+		:active, :hover, :focus {
+			text-decoration: none;
+			text-shadow: $hard-shadow;
+		}
 	}
-	
+
 	input:-webkit-autofill,
 	input:-webkit-autofill:hover,
 	input:-webkit-autofill:focus,
-	input:-webkit-autofill:active, 
+	input:-webkit-autofill:active,
 	.form-control:focus {
 		box-shadow: 0 0 0 100px $midnightblue-color inset;
-		-webkit-text-fill-color: white; 
-	}	
+		-webkit-text-fill-color: #FFF;
+	}
 
 	.portlet-topper {
 		z-index: 1;
-    }
+	}
 
-    #heading > a.custom-logo > img {
-        height: auto;
-        width: 85px;
-    }
-    
-    .sign-in {
-        a {
-            color: white;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-    }
+	#heading > a.custom-logo > img {
+		height: auto;
+		width: 85px;
+	}
 
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+	.sign-in {
+		a {
+			color: #FFF;
+			font-family: sans-serif;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	}
 
-        nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+	.row {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		nav {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
 
 	// Linked Navbar styling
-	 #navigationCollapse .navbar-blank > li.hover > a, 
-	 #navigationCollapse .navbar-blank > li.active > a, 
-	 #navigationCollapse .navbar-blank > li .dropdown-menu .active > a {
-		color: white;
+
+	#navigationCollapse .navbar-blank > li.hover > a,
+	#navigationCollapse .navbar-blank > li.active > a,
+	#navigationCollapse .navbar-blank > li .dropdown-menu .active > a {
+		border-bottom: 2px solid #FFF;
+		color: #FFF;
 		text-shadow: $hard-shadow;
-		border-bottom: 2px solid white;
 	}
-	
+
 	.navbar {
 		background: $nyred-color;
 		font-family: sans-serif;
-		text-transform: uppercase;
 		font-size: larger;
 		letter-spacing: 2px;
-	}
-
-	.portlet-content a:hover , .portlet-content a:focus {
-		text-shadow: $hard-shadow;
-		color:white;
+		text-transform: uppercase;
 	}
 
 	.navbar-collapse {
@@ -99,14 +91,20 @@
 		margin: 12px 0 12px 6px;
 	}
 
+	.portlet-content a:hover, .portlet-content a:focus {
+		color: #FFF;
+		text-shadow: $hard-shadow;
+	}
+
 	// NYXL in header (font-family: "sans-serif")
+
 	#heading .site-name {
+		background: $nyred-color;
+		color: #FFF;
 		font-size: 150%;
 		margin-left: 8px;
-		vertical-align: middle;
-		background: $nyred-color;
-		color: white;
 		padding: 10px 50px;
+		vertical-align: middle;
 
 		@include sm {
 			letter-spacing: 2px;
@@ -138,19 +136,11 @@
 		}
 
 		// Navbar link items
+
 		.navbar-blank > li {
 			& > a {
-				color: white;
+				color: #FFF;
 			}
-
-            // &:hover, 
-            // &.hover, 
-            // &.active, 
-            // .dropdown-menu .active {
-			// 	& > a {
-			// 		color: $midnightblue-color;
-			// 	}
-			// }
 		}
 
 		.portlet-content {
@@ -183,12 +173,13 @@
 		}
 
 		// Search bar styling
+
 		.form-control {
 			background-color: transparent;
-            border-bottom-width: 1px;
-            margin-top: 2px;
-            border-color: white;
-            color: white;
+			border-bottom-width: 1px;
+			border-color: #FFF;
+			color: #FFF;
+			margin-top: 2px;
 
 			@include media-query(null, $screen-xs-max) {
 				border-width: 0;
@@ -196,9 +187,9 @@
 		}
 
 		.form-control::placeholder {
-            text-transform: uppercase;
-            color: white;
-            letter-spacing: 2px;
+			color: #FFF;
+			letter-spacing: 2px;
+			text-transform: uppercase;
 		}
 
 		.search-select {
@@ -283,7 +274,7 @@
 
 	.navbar-nav {
 		@include media-query(null, $screen-xs-max) {
-			margin: 0 0;
+			margin: 0;
 		}
 	}
 
