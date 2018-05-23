@@ -36,6 +36,11 @@ body {
 	background-color: $bg-color;
 }
 
+a {
+	transition: 0.3s ease-in-out;
+	white-space: nowrap;
+}
+
 .container-fluid-1280 .row {
 	margin-left: 15px;
 	margin-right: 15px;
@@ -50,6 +55,7 @@ body {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	transition: $transition;
 }
 
 .btn:hover, .btn:focus {
@@ -75,7 +81,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: "Titillium Web";
 }
 
-//Sidebar nav Styles
+/* Sidebar nav Styles */
 
 .sidebar-body {
 	a {
@@ -94,7 +100,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	text-transform: uppercase;
 }
 
-//styles when panel is clicked open
+/* styles when panel is clicked open */
 
 .product-menu .panel-heading .panel-title > .panel-toggler:not(.collapsed) {
 	border-left: 4px solid $brightblue-color !important;
@@ -138,7 +144,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin-right: -15px;
 }
 
-//panel styles
+/* panel styles */
 
 .panel {
 	border-radius: 8px;
@@ -163,7 +169,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 }
 
-//form styles
+/* form styles */
 
 .form-control {
 	:focus {
@@ -172,7 +178,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 }
 
-// default footer styles
+/* default footer styles */
 
 #footer {
 	background-color: $solid-color;

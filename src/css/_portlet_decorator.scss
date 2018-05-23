@@ -22,10 +22,6 @@
 		letter-spacing: 2px;
 		text-transform: uppercase;
 
-		:hover, :focus, :active {
-			text-shadow: $hard-shadow;
-		}
-
 		.btn,
 		.btn-default,
 		.btn:hover,
@@ -56,7 +52,7 @@
 	border-bottom-color: $brightblue-color;
 }
 
-//BLOG styles
+/* BLOG styles */
 
 .portlet-blogs {
 	.entry-info, .hide-accessible {
@@ -84,7 +80,7 @@
 	}
 }
 
-//FORM styles
+/* FORM styles */
 
 .portlet-forms {
 	h1, h2 {
@@ -107,14 +103,14 @@
 	color: $brightblue-color;
 }
 
-//Wiki card styles
+/* Wiki card styles */
 
 .panel-group .panel-title > a,
 .panel-group .panel-title > span {
 	color: #FFF;
 }
 
-//Changes color of links on wiki entry
+/* Changes color of links on wiki entry */
 
 .card a, .card-horizontal a {
 	color: $lightblue-color;
