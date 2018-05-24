@@ -71,7 +71,7 @@
 
 	.entry-social {
 		a {
-			color: $lightblue-color;
+			color: #65B6F0;
 
 			:focus, :hover, :active, :visited {
 				color: $brightblue-color;
@@ -99,8 +99,8 @@
 }
 
 .form-control:focus {
-	border-color: $brightblue-color;
-	color: $brightblue-color;
+	border-color:#65B6F0;
+	color: #65B6F0;
 }
 
 /* Wiki card styles */
@@ -133,5 +133,5 @@
 /* Changes color of links on wiki entry */
 
 .card a, .card-horizontal a {
-	color: $lightblue-color;
+	color: #65B6F0;
 }

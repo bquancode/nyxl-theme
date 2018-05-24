@@ -205,7 +205,7 @@ input {
 	margin-right: -15px;
 }
 
-/* panel styles */
+/* Panel Styles */
 
 .panel {
 	border-radius: 8px;
@@ -230,12 +230,23 @@ input {
 	}
 }
 
+.card {
+	.panel-heading {
+		background: none;
+
+		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+			color: $owgray-color;
+			text-transform: none;
+		}
+	}
+}
+
 /* Form styles */
 
 .form-control {
 	:focus {
-		border-color: $lightblue-color;
-		color: $lightblue-color;
+		border-color: #65B6F0;
+		color: #65B6F0;
 	}
 }
 
