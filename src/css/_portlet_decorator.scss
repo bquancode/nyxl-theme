@@ -110,6 +110,20 @@
 	color: #FFF;
 }
 
+.card .divider, .card-horizontal .divider {
+	background-color: none;
+}
+
+/* Remove borders */
+
+.card, 
+.card-horizontal,
+.taglib-header, 
+.portlet-decorate .portlet-content {
+	border: none;
+	box-shadow: none;
+}
+
 /* Changes color of links on wiki entry */
 
 .card a, .card-horizontal a {
