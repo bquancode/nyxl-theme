@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	}
 }
 
-.entry-info {
+.entry-info,
+.yui3-g [class *= "yui3-u"] {
 	font-family: $title-font;
 }
 
@@ -125,7 +126,7 @@ input {
 /* Search bar stylings with white background */
 
 .navbar.collapse-basic-search .basic-search .btn-default {
-	color: $lightgray-color;
+	color: $lightgray-color !important;
 
 	:hover {
 		color: #65B6F0 !important;
