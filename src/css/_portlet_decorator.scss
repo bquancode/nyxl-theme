@@ -118,8 +118,10 @@
 
 .card, 
 .card-horizontal,
-.taglib-header, 
-.portlet-decorate .portlet-content {
+.navbar-default,
+.portlet-decorate .portlet-content,
+.taglib-header,
+.list-group {
 	border: none;
 	box-shadow: none;
 }

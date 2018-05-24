@@ -84,6 +84,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: $nyred-color;
 }
 
+.panel-heading {
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		color:#FFF;
+		
+		.text-default {
+			color: $owgray-color;
+		}
+	}
+}
+
 .entry-info {
 	font-family: $title-font;
 }
@@ -110,6 +120,25 @@ input {
 
 .glyphicon {
 	font-family: 'Glyphicons Halflings' !important;
+}
+
+/* Search bar stylings with white background */
+
+.navbar.collapse-basic-search .basic-search .btn-default {
+	color: $ligtgray-color;
+
+	:hover {
+		color: #65B6F0 !important;
+	}
+}
+
+.basic-search, .input-group {
+	border: $lightgray-border;
+	border-radius: 3px;
+}
+
+.navbar-default.collapse-basic-search .basic-search .form-control {
+	padding-left: 5%;
 }
 
 /* Sidebar nav Styles */
