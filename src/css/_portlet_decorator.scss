@@ -124,6 +124,12 @@
 	box-shadow: none;
 }
 
+.panel-heading {
+	.divider {
+		display: none;
+	}
+}
+
 /* Changes color of links on wiki entry */
 
 .card a, .card-horizontal a {

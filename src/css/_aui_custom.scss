@@ -5,19 +5,25 @@ $complementary-color: rgb(15, 87, 234);
 $solid-color: rgba(23, 28, 56, 0.9);
 
 /* Colors used for text and backgrounds */
-$midnightblue-color: rgba(23, 28, 56, 1);
-$nyred-color: rgba(252, 28, 38, 1);
 $brightblue-color: rgb(15, 87, 234);
-$owgray-color: rgb(72, 72, 72);
+$midnightblue-color: rgba(23, 28, 56, 1);
+$lightblue-color: rgb(15, 130, 225);
+$lightgray-border: 1px solid #E3E6E8;
 $lightgray-color: #E3E6E8;
 $lightred-color: rgb(237, 94, 104);
 $lightmidnight-color: rgb(54, 59, 89);
-$lightblue-color: rgb(15, 130, 225);
-$lightgray-border: 1px solid #E3E6E8;
+$nyred-color: rgba(252, 28, 38, 1);
+$owgray-color: rgb(72, 72, 72);
 
 /* Styles for different shadows */
-$soft-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0;
 $box-shadow: 0 10px 6px -6px #777;
 $hard-shadow: 1px 2px 0 rgba(0, 0, 0, 1);
+$soft-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0;
 $text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 $transition: 0.2s ease-in-out;
+
+/* Font Variables */
+$body-font: "Titillium Web";
+$font-text: sans-serif;
+$nav-font: sans-serif;
+$title-font: "Circular";
