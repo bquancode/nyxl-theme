@@ -69,16 +69,47 @@ a {
 	color: $owgray-color;
 }
 
+
+/* Text Styles */
+
+a {
+	font-family: $link-text;
+}
+
+.portlet-title-text,
+thead,
+.header-title,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $title-font;
+	color: $nyred-color;
+}
+
+.entry-info {
+	font-family: $title-font;
+}
+
+.alert,
+p,
+.entry-body,
+.message-content,
+.rating-label,
+.stats,
+tbody,
+.text-default {
+	font-family: $body-font;
+	color: $owgray-color;
+}
+
+input {
+	font-family: $font-text;
+}
+
 .rating a {
 	font-family: "fontawesome-alloy";
 }
 
 .glyphicon {
 	font-family: 'Glyphicons Halflings' !important;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: "Titillium Web";
 }
 
 /* Sidebar nav Styles */
@@ -167,16 +198,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	.text-primary {
 		color: $lightblue-color;
 	}
-}
-
-/* Remove borders */
-
-.card, 
-.card-horizontal,
-.taglib-header, 
-.portlet-decorate .portlet-content {
-	border: none;
-	box-shadow: none;
 }
 
 /* Form styles */
