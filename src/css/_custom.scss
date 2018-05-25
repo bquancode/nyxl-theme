@@ -285,6 +285,10 @@ input {
 	}
 }
 
+.lfr-nav-child-toggle {
+	z-index: 99999;
+}
+
 /* Mobile Styles */
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -330,5 +334,14 @@ input {
 	#content .row {
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	/* Table Styles */
+
+	table {
+		td {
+			max-width: 200px;
+			overflow: auto;
+		}
 	}
 }

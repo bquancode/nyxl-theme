@@ -19,14 +19,3 @@ var addFullWidth = (elem) => {
 };
 
 addEventListener('load', addFullWidth('#portlet_com_liferay_hello_world_web_portlet_HelloWorldPortlet'));
-
-var childElementNav = document.querySelector("#banner");
-
-addEventListener("click", function(event) {
-	if (event.target.className == ".icon-bar") {
-		//then make the child display to visable
-		console.log(event.target)
-	}
-	
-
-} )
