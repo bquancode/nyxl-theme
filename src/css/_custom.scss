@@ -42,8 +42,7 @@ a {
 }
 
 .container-fluid-1280 .row {
-	margin-left: 15px;
-	margin-right: 15px;
+	margin: 0;
 }
 
 .btn, .btn-default {
@@ -173,12 +172,8 @@ input {
 }
 
 #footer {
-	left: 50%;
-	margin: 5% -50vw 0 -50vw;
 	max-width: none;
-	position: relative;
-	right: 50%;
-	width: 100vw;
+	width: 100%;
 
 	div.row {
 		color: #F5F5DC;
@@ -315,6 +310,12 @@ input {
 	}
 
 	/* Margins */
+
+	.container-fluid-1280,
+	.row,
+	.container-fluid-1280 .row {
+		margin: 0;
+	}
 	
 	.portlet-blogs .subscribe {
 		margin-right: 5%;
@@ -344,6 +345,7 @@ input {
 
 	.portlet-title-text {
 		text-align: center;
+		max-width: none;
 	}
 
 	.portlet-blogs .cover-image-caption {
