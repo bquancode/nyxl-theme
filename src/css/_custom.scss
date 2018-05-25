@@ -49,7 +49,7 @@ a {
 	background: $lightblue-color;
 	border-color: $lightblue-color;
 	color: #FFF !important;
-	font-family: sans-serif;
+	font-family: $link-text;
 	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -149,7 +149,7 @@ input {
 
 .sidebar-body {
 	a {
-		font-family: "Open Sans";
+		font-family: "$form-text";
 		font-weight: normal;
 		letter-spacing: 0.5px;
 		text-transform: capitalize;
@@ -159,7 +159,7 @@ input {
 .product-menu .panel-heading .panel-title > .panel-toggler .category-name,
 .product-menu .panel-heading .panel-title > .panel-toggler .user-name,
 .product-menu .panel-heading .panel-title > .panel-toggler .site-name {
-	font-family: sans-serif;
+	font-family: $link-text;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -177,7 +177,7 @@ input {
 
 	div.row {
 		color: #F5F5DC;
-		font-family: "Open Sans";
+		font-family: $nav-font;
 		letter-spacing: 1.5px;
 		text-align: center;
 		text-transform: lowercase;
@@ -186,13 +186,7 @@ input {
 }
 
 .full-width {
-	left: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	max-width: none;
-	position: relative;
-	right: 50%;
-	width: 100vw;
+	@include fullwidth();
 }
 
 #wrapper {
@@ -215,7 +209,7 @@ input {
 		border: none;
 		border-radius: 8px 8px 0 0;
 		color: #FFF;
-		font-family: sans-serif;
+		font-family: $link-text;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 	}

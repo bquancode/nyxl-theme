@@ -28,3 +28,13 @@ $form-text: "Open Sans";
 $link-text: sans-serif;
 $nav-font: sans-serif;
 $title-font: "Circular";
+
+@mixin fullwidth() {
+    left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: none;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}

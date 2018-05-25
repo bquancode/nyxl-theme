@@ -9,7 +9,7 @@
 
 .portlet-title-text {
 	color: $nyred-color;
-	font-family: "Circular";
+	font-family: $title-font;
 	font-size: x-large;
 	letter-spacing: 0.5px;
 	text-transform: capitalize;
@@ -17,7 +17,7 @@
 
 .portlet-content {
 	a {
-		font-family: sans-serif;
+		font-family: $link-text;
 		font-weight: bold;
 		letter-spacing: 2px;
 		text-transform: uppercase;
@@ -56,16 +56,16 @@
 
 .portlet-blogs {
 	.entry-info, .hide-accessible {
-		font-family: "Open Sans";
+		font-family: $form-text;
 	}
 
 	.entry-title {
-		font-family: "Circular";
+		font-family: $title-font;
 		letter-spacing: 0.5px;
 		text-transform: capitalize;
 
 		h2 > a {
-			font-family: "Circular";
+			font-family: $title-font;
 		}
 	}
 
@@ -89,12 +89,12 @@
 	}
 
 	.control-label {
-		font-family: "Titillium Web";
+		font-family: $body-text;
 		letter-spacing: 2px;
 	}
 
 	label, select, input, table {
-		font-family: "Open Sans";
+		font-family: $form-text;
 	}
 }
 
