@@ -1,9 +1,3 @@
-/* Colors that get pulled throughout the theme */
-$bg-color: #FFF;
-$bright-color: rgba(252, 28, 38, 1);
-$complementary-color: rgb(15, 87, 234);
-$solid-color: rgba(23, 28, 56, 0.9);
-
 /* Colors used for text and backgrounds */
 $brightblue-color: rgb(15, 87, 234);
 $lightblue-color: #65B6F0;
@@ -15,6 +9,12 @@ $midnightblue-color: rgba(23, 28, 56, 1);
 $owgray-color: rgb(72, 72, 72);
 $nyred-color: rgba(252, 28, 38, 1);
 
+/* Colors that get pulled throughout the theme */
+$bg-color: #FFF;
+$bright-color: $nyred-color;
+$complementary-color: $brightblue-color;
+$solid-color: $midnightblue-color;
+
 /* Styles for different shadows */
 $box-shadow: 0 10px 6px -6px #777;
 $hard-shadow: 1px 2px 0 rgba(0, 0, 0, 1);
@@ -24,7 +24,7 @@ $soft-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px 0;
 
 /* Font Variables */
 $body-font: "Titillium Web";
-$form-text: "Open Sans";
+$form-font: "Open Sans";
 $link-text: sans-serif;
 $nav-font: sans-serif;
 $title-font: "Circular";

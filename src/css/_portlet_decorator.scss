@@ -56,7 +56,7 @@
 
 .portlet-blogs {
 	.entry-info, .hide-accessible {
-		font-family: $form-text;
+		font-family: $form-font;
 	}
 
 	.entry-title {
@@ -89,12 +89,12 @@
 	}
 
 	.control-label {
-		font-family: $body-text;
+		font-family: $body-font;
 		letter-spacing: 2px;
 	}
 
 	label, select, input, table {
-		font-family: $form-text;
+		font-family: $form-font;
 	}
 }
 

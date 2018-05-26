@@ -115,7 +115,7 @@ tbody,
 }
 
 input {
-	font-family: $form-text;
+	font-family: $form-font;
 }
 
 .rating a {
@@ -149,7 +149,7 @@ input {
 
 .sidebar-body {
 	a {
-		font-family: "$form-text";
+		font-family: "$form-font";
 		font-weight: normal;
 		letter-spacing: 0.5px;
 		text-transform: capitalize;
