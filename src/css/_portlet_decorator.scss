@@ -11,13 +11,15 @@
 	color: $nyred-color;
 	font-family: $title-font;
 	font-size: x-large;
-	@include textStyle(0.5px, capitalize); 
+
+	@include textStyle(0.5px, capitalize);
 }
 
 .portlet-content {
 	a {
 		font-family: $link-text;
 		font-weight: bold;
+
 		@include textStyle(2px, uppercase);
 
 		.btn,
@@ -59,6 +61,7 @@
 
 	.entry-title {
 		font-family: $title-font;
+
 		@include textStyle(0.5px, capitalize);
 
 		h2 > a {
@@ -92,7 +95,7 @@
 }
 
 .form-control:focus {
-	border-color:#65B6F0;
+	border-color: #65B6F0;
 	color: #65B6F0;
 }
 
@@ -107,14 +110,13 @@
 	background-color: none;
 }
 
-
 thead:first-child > tr:first-child > th {
 	border-top: 1px solid !important;
 }
 
 /* Remove borders */
 
-.card, 
+.card,
 .card-horizontal,
 .navbar-default,
 .portlet-decorate .portlet-content,
@@ -143,14 +145,15 @@ thead:first-child > tr:first-child > th {
 }
 
 .chat-panel-title {
-	background: $nyred-color!important;
+	background: $nyred-color !important;
 	border-radius: 4px 4px 0 0;
 	font-family: $nav-font;
+
 	@include textStyle(2px, uppercase);
 }
 
 .chat-settings label {
 	color: $owgray-color;
-	font-weight: 400 !important;
 	font-size: 12px;
+	font-weight: normal !important;
 }
