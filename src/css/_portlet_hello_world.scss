@@ -16,8 +16,7 @@
 		color: $nyred-color;
 		font-family: "Helvetica Bold";
 		font-size: 48px;
-		letter-spacing: 8px;
-		text-transform: uppercase;
+		@include textStyle(8px, uppercase);
 		word-spacing: 10px;
 	}
 
