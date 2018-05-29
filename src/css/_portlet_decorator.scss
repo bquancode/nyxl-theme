@@ -72,10 +72,7 @@
 	.entry-social {
 		a {
 			color: #65B6F0;
-
-			:focus, :hover, :active, :visited {
-				color: $brightblue-color;
-			}
+			transition: $transition;
 		}
 	}
 }
