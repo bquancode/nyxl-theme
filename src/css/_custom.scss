@@ -1,5 +1,7 @@
 @import "portlet_decorator";
+
 @import "portlet_hello_world";
+
 @import "header";
 
 body {
@@ -21,8 +23,9 @@ a {
 	font-family: $link-text;
 	font-size: 12px;
 	font-weight: bold;
-	@include textStyle(2px, uppercase);
 	transition: $transition;
+
+	@include textStyle(2px, uppercase);
 }
 
 .btn:hover, .btn:focus {
@@ -43,15 +46,16 @@ a {
 .portlet-title-text,
 thead,
 .header-title,
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: $title-font;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
 	color: $nyred-color;
+	font-family: $title-font;
 }
 
 .panel-heading {
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-		color:#FFF;
-		
+		color: #FFF;
+
 		.text-default {
 			color: $owgray-color;
 		}
@@ -59,7 +63,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .entry-info,
-.yui3-g [class *= "yui3-u"] {
+.yui3-g [class*="yui3-u"] {
 	font-family: $title-font;
 }
 
@@ -75,8 +79,8 @@ p,
 .stats,
 tbody,
 .text-default {
-	font-family: $body-font;
 	color: $owgray-color;
+	font-family: $body-font;
 }
 
 input {
@@ -117,6 +121,7 @@ input {
 	a {
 		font-family: $form-font;
 		font-weight: normal;
+
 		@include textStyle(0.5px, capitalize);
 	}
 }
@@ -125,6 +130,7 @@ input {
 .product-menu .panel-heading .panel-title > .panel-toggler .user-name,
 .product-menu .panel-heading .panel-title > .panel-toggler .site-name {
 	font-family: $link-text;
+
 	@include textStyle(2px, uppercase);
 }
 
@@ -143,8 +149,9 @@ input {
 		color: #F5F5DC;
 		font-family: $nav-font;
 		text-align: center;
-		@include textStyle(1.5px, lowercase);
 		width: 100%;
+
+		@include textStyle(1.5px, lowercase);
 	}
 }
 
@@ -162,8 +169,8 @@ input {
 }
 
 .product-menu .panel-group .panel-heading + .panel-collapse.in, .product-menu .panel-group .panel-heading + .panel-collapse.collapsing {
-    border-bottom: 2px solid $brightblue-color;
-    }
+	border-bottom: 2px solid $brightblue-color;
+}
 
 /* Panel Styles */
 
@@ -177,6 +184,7 @@ input {
 		border-radius: 8px 8px 0 0;
 		color: #FFF;
 		font-family: $link-text;
+
 		@include textStyle(2px, uppercase);
 	}
 
@@ -193,7 +201,7 @@ input {
 	.panel-heading {
 		background: none;
 
-		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			color: $owgray-color;
 			text-transform: none;
 		}
@@ -246,17 +254,17 @@ input {
 
 /* Mobile Styles */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#banner, #footer {
-		width: 100%;
-		position: inherit;
-		margin: 0;
 		left: 0;
+		margin: 0;
+		position: inherit;
 		right: 0;
+		width: 100%;
 	}
 
 	.pull-right {
-		float: none!important;
+		float: none !important;
 		text-align: center;
 	}
 
@@ -267,10 +275,22 @@ input {
 	#_com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet_kwsw__null__null {
 		margin-top: -12%;
 	}
-	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12,
+
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+	.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+	.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
+	.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
+	.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+	.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
+	.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+	.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+	.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
+	.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+	.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
+	.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12,
 	.container-fluid-1280 {
-		padding-left: 0; 
-		padding-right: 0; 
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	/* Margins */
@@ -284,7 +304,7 @@ input {
 	.container-fluid-1280 .row {
 		margin: 0;
 	}
-	
+
 	.portlet-blogs .subscribe {
 		margin-right: 5%;
 	}
@@ -303,17 +323,17 @@ input {
 	}
 
 	.portlet-content {
+		align-content: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-content: center;
 		padding-left: 0;
 		padding-right: 0;
 	}
 
 	.portlet-title-text {
-		text-align: center;
 		max-width: none;
+		text-align: center;
 	}
 
 	.portlet-blogs .cover-image-caption {
