@@ -29,8 +29,7 @@
 		a {
 			color: #FFF;
 			font-family: $link-text;
-			letter-spacing: 2px;
-			text-transform: uppercase;
+			@include textStyle(2px, uppercase);
 		}
 	}
 
@@ -103,8 +102,7 @@
 		background: $nyred-color;
 		font-family: $link-text;
 		font-size: larger;
-		letter-spacing: 2px;
-		text-transform: uppercase;
+		@include textStyle(2px, uppercase);
 	}
 
 	.navbar-collapse {
@@ -233,8 +231,7 @@
 
 		.form-control::placeholder {
 			color: #FFF;
-			letter-spacing: 2px;
-			text-transform: uppercase;
+			@include textStyle(2px, uppercase);
 		}
 
 		.search-select {

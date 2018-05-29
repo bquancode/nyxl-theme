@@ -78,5 +78,4 @@ $title-font: "Circular";
 @mixin textStyle($letter-spacing, $text-transform) {
 	letter-spacing: $letter-spacing;
 	text-transform: $text-transform;
-
 }
