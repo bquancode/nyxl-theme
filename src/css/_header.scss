@@ -29,6 +29,7 @@
 		a {
 			color: #FFF;
 			font-family: $link-text;
+
 			@include textStyle(2px, uppercase);
 		}
 	}
@@ -63,21 +64,21 @@
 	}
 
 	/* Animated border bottom on hover */
-	
+
 	.lfr-nav-item,
 	#banner ul.child-menu > li {
 		text-decoration: none;
 	}
 
 	.lfr-nav-item::after {
-		content: '';
 		background: #FFF;
+		content: '';
 		display: block;
 		height: 2px;
-		transition: width .3s;
+		transition: width 0.3s;
 		width: 0;
 	}
-	
+
 	.lfr-nav-item:hover::after {
 		width: 100%;
 	}
@@ -101,6 +102,7 @@
 		background: $nyred-color;
 		font-family: $link-text;
 		font-size: larger;
+
 		@include textStyle(2px, uppercase);
 	}
 
@@ -230,6 +232,7 @@
 
 		.form-control::placeholder {
 			color: #FFF;
+
 			@include textStyle(2px, uppercase);
 		}
 
@@ -356,7 +359,7 @@
 	padding-left: 28px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#banner #navigationCollapse #navigation .portlet .portlet-body > .navbar {
 		margin-bottom: 5%;
 	}
