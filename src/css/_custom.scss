@@ -150,7 +150,7 @@ input {
 
 .sidebar-body {
 	a {
-		font-family: "$form-font";
+		font-family: $form-font;
 		font-weight: normal;
 		letter-spacing: 0.5px;
 		text-transform: capitalize;
@@ -198,6 +198,10 @@ input {
 	margin-left: -15px;
 	margin-right: -15px;
 }
+
+.product-menu .panel-group .panel-heading + .panel-collapse.in, .product-menu .panel-group .panel-heading + .panel-collapse.collapsing {
+    border-bottom: 2px solid $brightblue-color;
+    }
 
 /* Panel Styles */
 
@@ -273,6 +277,10 @@ input {
 	.overlay-focused:focus {
 		outline: 0;
 	}
+}
+
+.lfr-nav-child-toggle {
+	z-index: 1000;
 }
 
 /* Mobile Styles */
