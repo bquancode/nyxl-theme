@@ -2,36 +2,6 @@
 @import "portlet_hello_world";
 @import "header";
 
-@font-face {
-	font-family: "Helvetica Lt";
-	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Helvetica Bold";
-	src: url("../fonts/Helvetica/HelveticaLTStd-Comp.otf") format("opentype");
-}
-
-@font-face {
-	font-family: "Open Sans";
-	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Titillium Web";
-	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Circular";
-	src: url("../fonts/Circular/Circular-Medium.ttf") format("truetype");
-}
-
 body {
 	background-color: $bg-color;
 }
@@ -47,28 +17,22 @@ a {
 }
 
 .btn, .btn-default {
-	background: $lightblue-color;
-	border-color: $lightblue-color;
-	color: #FFF !important;
+	@include btnBackground($lightblue-color);
 	font-family: $link-text;
 	font-size: 12px;
 	font-weight: bold;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	@include textStyle(2px, uppercase);
 	transition: $transition;
 }
 
 .btn:hover, .btn:focus {
-	background: $brightblue-color;
-	border: 2px solid $brightblue-color;
-	color: #FFF;
+	@include btnBackground($brightblue-color);
 	text-shadow: $hard-shadow;
 }
 
 .text-default {
 	color: $owgray-color;
 }
-
 
 /* Text Styles */
 
@@ -152,8 +116,7 @@ input {
 	a {
 		font-family: $form-font;
 		font-weight: normal;
-		letter-spacing: 0.5px;
-		text-transform: capitalize;
+		@include textStyle(0.5px, capitalize);
 	}
 }
 
@@ -161,8 +124,7 @@ input {
 .product-menu .panel-heading .panel-title > .panel-toggler .user-name,
 .product-menu .panel-heading .panel-title > .panel-toggler .site-name {
 	font-family: $link-text;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	@include textStyle(2px, uppercase);
 }
 
 /* styles when panel is clicked open */
@@ -179,9 +141,8 @@ input {
 	div.row {
 		color: #F5F5DC;
 		font-family: $nav-font;
-		letter-spacing: 1.5px;
 		text-align: center;
-		text-transform: lowercase;
+		@include textStyle(1.5px, lowercase);
 		width: 100%;
 	}
 }
@@ -215,8 +176,7 @@ input {
 		border-radius: 8px 8px 0 0;
 		color: #FFF;
 		font-family: $link-text;
-		letter-spacing: 2px;
-		text-transform: uppercase;
+		@include textStyle(2px, uppercase);
 	}
 
 	.panel-default {

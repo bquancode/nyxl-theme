@@ -1,3 +1,33 @@
+@font-face {
+	font-family: "Circular";
+	src: url("../fonts/Circular/Circular-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Helvetica Bold";
+	src: url("../fonts/Helvetica/HelveticaLTStd-Comp.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Helvetica Lt";
+	src: url("../fonts/Helvetica/HelveticaLTStd-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Titillium Web";
+	src: url("../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype");
+}
+
 /* Colors used for text and backgrounds */
 $brightblue-color: rgb(15, 87, 234);
 $lightblue-color: #65B6F0;
@@ -37,4 +67,16 @@ $title-font: "Circular";
 	position: relative;
 	right: 50%;
 	width: 100vw;
+}
+
+@mixin btnBackground($color) {
+	background: $color;
+	border: 2px solid $color;
+	color: #FFF;
+}
+
+@mixin textStyle($letter-spacing, $text-transform) {
+	letter-spacing: $letter-spacing;
+	text-transform: $text-transform;
+
 }
