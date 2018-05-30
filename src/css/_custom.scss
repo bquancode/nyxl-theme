@@ -6,11 +6,12 @@
 
 body {
 	background-color: $bg-color;
+	font-family: $body-font;
 }
 
 a {
 	transition: 0.3s ease-in-out;
-	white-space: nowrap;
+	// white-space: nowrap;
 }
 
 .container-fluid-1280 .row,
@@ -95,6 +96,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .entry-info,
+label,
+span.control-label,
 .yui3-g [class*="yui3-u"] {
 	font-family: $title-font;
 }
@@ -115,9 +118,13 @@ tbody,
 	font-family: $body-font;
 }
 
-input ,
-.alloy-editor-container .alloy-editor.alloy-editor-placeholder.ae-placeholder:not(:focus):not(.form-control) {
+.alloy-editor-container .alloy-editor.alloy-editor-placeholder.ae-placeholder:not(:focus):not(.form-control),
+fieldset,
+input, 
+select, 
+textarea {
 	font-family: $body-font;
+	color: $owgray-color;
 }
 
 .rating-element {

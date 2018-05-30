@@ -59,10 +59,10 @@
 		}
 	}
 
-	ul.nav.nav-tabs.navbar-site.yui3-dd-drop {
+	ul.nav.nav-tabs.navbar-site {
+		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
 	}
 
 	/* Linked Navbar styling */
@@ -173,8 +173,11 @@
 	/* NYXL in header */
 
 	#heading .site-name {
-		background: $nyred-color;
-		color: #FFF;
+		// background: $nyred-color;
+		// color: #FFF;
+		// font-family: sans-serif;
+
+		@include redBackground();
 		font-size: 150%;
 		margin-left: 8px;
 		padding: 10px 50px;

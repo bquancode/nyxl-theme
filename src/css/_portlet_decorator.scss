@@ -30,6 +30,7 @@
 	}
 
 	.portlet-body {
+		font-family: $body-font;
 		a {
 			font-family: $body-font;
 			@include textStyle(0, none);
