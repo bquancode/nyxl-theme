@@ -157,6 +157,18 @@ textarea {
 
 /* Sidebar nav Styles */
 
+.sidebar-header {
+	display: flex;
+
+	a {
+		width: 50%;
+
+		svg {
+			float: right;
+		}
+	}
+}
+
 .sidebar-body {
 	a {
 		font-family: $form-font;
