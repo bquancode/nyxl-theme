@@ -16,6 +16,13 @@
 		-webkit-text-fill-color: #FFF;
 	}
 
+	li:focus,
+	li > a:focus ,
+	li > a span:focus ,
+	ul:focus {
+		outline-color: $nyred-color;
+	}
+
 	.portlet-topper {
 		z-index: 1;
 	}
@@ -118,6 +125,11 @@
 	.nav-tabs > li.active > a:hover,
 	.nav-tabs > li.active > a:focus {
 		background: $nyred-color;
+		font-family: $link-text;
+		@include textStyle(2px, uppercase);
+	}
+
+	.nav li > a {
 		font-family: $link-text;
 		@include textStyle(2px, uppercase);
 	}

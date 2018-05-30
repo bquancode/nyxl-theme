@@ -17,16 +17,22 @@
 
 .portlet-content {
 	a {
-		font-family: $link-text;
-		font-weight: bold;
-
-		@include textStyle(2px, uppercase);
 
 		.btn,
 		.btn-default,
 		.btn:hover,
 		.btn:focus {
 			color: #FFF !important;
+			font-family: $link-text;
+			font-weight: bold;
+			@include textStyle(2px, uppercase);	
+		}
+	}
+
+	.portlet-body {
+		a {
+			font-family: $body-font;
+			@include textStyle(0, none);
 		}
 	}
 

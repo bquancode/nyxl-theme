@@ -83,8 +83,9 @@ tbody,
 	font-family: $body-font;
 }
 
-input {
-	font-family: $form-font;
+input ,
+.alloy-editor-container .alloy-editor.alloy-editor-placeholder.ae-placeholder:not(:focus):not(.form-control) {
+	font-family: $body-font;
 }
 
 .rating-element {
@@ -355,6 +356,10 @@ input {
 		td {
 			max-width: 200px;
 			overflow: auto;
+		}
+
+		th {
+			border: 1px solid $nyred-color;
 		}
 	}
 }
