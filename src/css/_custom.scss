@@ -221,7 +221,7 @@ textarea {
 }
 
 .product-menu .panel-group .panel-heading + .panel-collapse.in, .product-menu .panel-group .panel-heading + .panel-collapse.collapsing {
-	border-bottom: 2px solid $brightblue-color;
+	border-bottom: 2px solid $brightblue-color !important;
 }
 
 /* Panel Styles */
@@ -298,10 +298,6 @@ textarea {
 	.overlay-focused:focus {
 		outline: 0;
 	}
-}
-
-.lfr-nav-child-toggle {
-	z-index: 1000;
 }
 
 /* Mobile Styles */
