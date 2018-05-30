@@ -23,6 +23,10 @@
 		outline-color: $nyred-color;
 	}
 
+	input {
+		font-family: $nav-font;
+	}
+
 	.portlet-topper {
 		z-index: 1;
 	}

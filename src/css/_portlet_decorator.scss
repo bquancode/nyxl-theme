@@ -70,8 +70,15 @@
 
 		@include textStyle(0.5px, capitalize);
 
-		h2 > a {
+		h2 {
+
+			width: min-content;
+
+			> a {
 			font-family: $title-font;
+			font-weight: normal !important;
+			color: black;
+			}
 		}
 	}
 
@@ -81,6 +88,23 @@
 			transition: $transition;
 		}
 	}
+}
+
+.portlet-blogs h2 > a {
+	text-decoration: none;
+}
+
+.portlet-blogs h2 > a::after {
+	background: $nyred-color;
+	content: '';
+	display: block;
+	height: 2px;
+	transition: width 0.3s;
+	width: 0;
+}
+
+.portlet-blogs h2 > a:hover::after {
+	width: 100%;
 }
 
 /* FORM styles */

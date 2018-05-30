@@ -362,4 +362,8 @@ input ,
 			border: 1px solid $nyred-color;
 		}
 	}
+
+	.table-bordered > thead > tr > th {
+		border: 1px solid $nyred-color;
+	}
 }
