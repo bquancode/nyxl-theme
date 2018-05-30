@@ -20,12 +20,12 @@ a {
 
 .btn, .btn-default {
 	@include btnBackground($lightblue-color);
-	font-family: $link-text;
+	font-family: $link-text !important;
 	font-size: 12px;
 	font-weight: bold;
 	transition: $transition;
 
-	@include textStyle(2px, uppercase);
+	@include textStyle(2px !important, uppercase !important);
 }
 
 .btn:hover, .btn:focus {
@@ -35,6 +35,38 @@ a {
 
 .text-default {
 	color: $owgray-color;
+}
+
+/* Animated Links on Hover */
+
+.portlet-blogs h2 > a::after,
+#_com_liferay_wiki_web_portlet_WikiPortlet_navTag li::after {
+	background: #FFF;
+	content: '';
+	display: block;
+	height: 2px;
+	transition: width 0.3s;
+	width: 0;
+}
+
+/* Red Underline*/
+.portlet-blogs h2 > a::after {
+	background: $nyred-color;
+}
+
+/* Lightblue Underline */
+#_com_liferay_wiki_web_portlet_WikiPortlet_navTag li::after {
+	background: $lightblue-color;
+}
+
+.portlet-blogs h2 > a:hover::after,
+#_com_liferay_wiki_web_portlet_WikiPortlet_navTag li:hover::after {
+	width: 100%;
+}
+
+/* Non animated style when active */
+#_com_liferay_wiki_web_portlet_WikiPortlet_navTag li.active:hover::after {
+	width: 0%;
 }
 
 /* Text Styles */
